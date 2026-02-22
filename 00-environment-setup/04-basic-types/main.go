@@ -34,7 +34,7 @@ func main() {
 	// 4. STRINGS, BYTES, AND RUNES
 	// A string in Go is a read-only slice of bytes. 
 	fmt.Println("\n--- Strings, Bytes, and Runes ---")
-	
+
 	// Let's use a string with non-ASCII characters (an emoji and an accented letter)
 	myString := "Go! 🚀 caffè"
 	fmt.Println("String:", myString)
@@ -59,11 +59,11 @@ func main() {
 	// 'rune' is an alias for 'int32'. It represents a single Unicode code point.
 	// We can convert our string to a slice (list) of runes.
 	myRunes := []rune(myString)
-	
+
 	fmt.Printf("Length of string in runes (actual characters): %d\n", len(myRunes))
-	
+
 	fmt.Print("Runes (Unicode Code Points): ")
-	// for int range 
+	// `for int range` syntactic sugar for `for i := 0; i < len(...); i++`
 	for i := range myRunes {
 		// %U prints the standard Unicode format (e.g., U+1F680 for the rocket)
 		fmt.Printf("%U ", myRunes[i]) 
