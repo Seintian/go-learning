@@ -46,7 +46,7 @@ func main() {
 	// The Go compiler will infer the type based on the value on the right.
 	var inferredFloat = 3.14 // Go infers this as a float64
 	// The Go compiler will throw an error in case of unused declared variables (extensions, too)
-	var unusedInferredBool = true  // Go infers this as a bool
+	// var unusedInferredBool = true  // Go infers this as a bool
 
 	fmt.Printf("--- Type Inference ---\n")
 	// fmt.Printf allows us to format strings. %T prints the data type, %v prints the value.
